@@ -1,9 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <!-- .NET 10 に戻す -->
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- パッケージは 10.0.x を探させず、互換性のある 9.0.21 で固定する -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.21" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+    
+    <!-- 脆弱性警告が出ないよう、修正済みの最新版を明示的に指定 -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="9.0.21" />
+  </ItemGroup>
 
 </Project>

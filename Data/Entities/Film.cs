@@ -1,41 +1,60 @@
-using System;
-using Microsoft.EntityFrameworkCore;
-using AspSakilaBackEnd.Data.Entities;
+﻿using System;
+using System.Collections.Generic;
 
-namespace AspSakilaBackEnd.Data.Entities
+namespace AspSakilaBackEnd.Models
 {
-	[Table("film")]
-	public class Film
-	{
-		[Key]
-		[Column("film_id")]
-		public ushort FilmId { get; set; }
+    
+public enum Rating
+    {
+        G,
+        PG,
+        PG_13,
+        R,
+        NC_17
+    }
 
-		[Required]
-		[Column("title")]
-		[StringLength(128)]
-		public string Title { get; set; } = null!;
+    public enum SpecialFeatures
+    {
+        Trailers,
+        Commentaries,
+        DeletedScenes,
+        BehindTheScenes
+    }
 
-		[Column("description", TypeName = "text")]
-		public string? Description { get; set; }
+public partial class Film
+{
+    public ushort FilmId { get; set; }
 
-		[Column("release_year")]
-		public int? ReleaseYear { get; set; }
+    public string Title { get; set; } = null!;
 
-		[Required]
-		[Column("language_id")]
-		public byte LanguageId { get; set; }
+    public string? Description { get; set; }
 
-		[Required]
-		[Column("rental_duration")]
-		public byte RentalDuration { get; set; }
+    public short? ReleaseYear { get; set; }
 
-		[Required]
-		[Column("rental_rate", TypeName = "decimal(4,2)")]
-		public decimal RentalRate { get; set; }
+    public byte LanguageId { get; set; }
 
-		[Required]
-		[Column("last_update")]
-		public DateTime LastUpdate { get; set; }
-	}
+    public byte? OriginalLanguageId { get; set; }
+
+    public byte RentalDuration { get; set; }
+
+    public decimal RentalRate { get; set; }
+
+    public ushort? Length { get; set; }
+
+    public decimal ReplacementCost { get; set; }
+
+    public Rating Rating { get; set; }
+
+    public DateTime LastUpdate { get; set; }
+
+    public virtual ICollection<FilmActor> FilmActors { get; set; } = new List<FilmActor>();
+
+    public virtual ICollection<FilmCategory> FilmCategories { get; set; } = new List<FilmCategory>();
+
+    public virtual ICollection<Inventory> Inventories { get; set; } = new List<Inventory>();
+
+    public virtual Language Language { get; set; } = null!;
+
+    public virtual Language? OriginalLanguage { get; set; }
+}
 }
