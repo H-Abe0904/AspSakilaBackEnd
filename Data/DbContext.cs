@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using AspSakilaBackEnd.Data.Entities;
+using AspSakilaBackEnd.Models;
 
 namespace AspSakilaBackEnd.Data
 {
@@ -8,6 +8,10 @@ namespace AspSakilaBackEnd.Data
 	/// </summary>
 	public class SakilaDbContext : DbContext
 	{
+		/// <summary>
+		/// Initializes a new instance of the <see cref="SakilaDbContext"/> class.
+		/// </summary>
+		/// <param name="options">The options to be used by the DbContext.</param>
 		public SakilaDbContext(DbContextOptions<SakilaDbContext> options) : base(options)
 		{
 		}
@@ -16,9 +20,9 @@ namespace AspSakilaBackEnd.Data
 		// Add other DbSet properties for other entities as needed
 
 		/// <summary>
-		/// Configures the entity mappings and relationships for the Sakila database context.
+		/// SakilaDbContext のモデルを構成するためのメソッド
 		/// </summary>
-		/// <param name="modelBuilder"></param>
+		/// <param name="modelBuilder">モデルビルダー</param>
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
@@ -130,6 +134,21 @@ namespace AspSakilaBackEnd.Data
 					.ValueGeneratedOnAddOrUpdate();
 			});
 
+			// Staff エンティティの LastUpdate プロパティにタイムスタンプ値を設定
+			modelBuilder.Entity<Staff>(entity =>
+			{
+				entity.Property(e => e.LastUpdate)
+					.HasDefaultValueSql("CURRENT_TIMESTAMP")
+					.ValueGeneratedOnAddOrUpdate();
+			});
+
+			// Store エンティティの LastUpdate プロパティにタイムスタンプ値を設定
+			modelBuilder.Entity<Store>(entity =>
+			{
+				entity.Property(e => e.LastUpdate)
+					.HasDefaultValueSql("CURRENT_TIMESTAMP")
+					.ValueGeneratedOnAddOrUpdate();
+			});
 		}
 	}
 }

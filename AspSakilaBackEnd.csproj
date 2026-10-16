@@ -9,7 +9,11 @@
 
   <ItemGroup>
     <!-- パッケージは 10.0.x を探させず、互換性のある 9.0.21 で固定する -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="10.0.2" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
     
     <!-- 脆弱性警告が出ないよう、修正済みの最新版を明示的に指定 -->
