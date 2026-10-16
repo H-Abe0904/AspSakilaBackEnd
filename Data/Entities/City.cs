@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
 
+[Table("city")]
 public partial class City
 {
     public ushort CityId { get; set; }

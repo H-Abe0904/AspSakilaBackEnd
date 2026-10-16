@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
 
+[Table("film_list")]
 public partial class FilmList
 {
     public ushort Fid { get; set; }

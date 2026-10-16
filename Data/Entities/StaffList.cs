@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
 
+[Table("staff_list")]
 public partial class StaffList
 {
     public byte Id { get; set; }

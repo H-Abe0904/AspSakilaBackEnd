@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
 
+[Table("staff")]
 public partial class Staff
 {
+   [Column("staff_id")]
     public byte StaffId { get; set; }
-
     public string FirstName { get; set; } = null!;
 
     public string LastName { get; set; } = null!;
 
-    public ushort AddressId { get; set; }
+   [Column("address_id")]
+    public ushort AddressId { get; set; } // 実際の外部キー列
 
     public byte[]? Picture { get; set; }
 
@@ -27,6 +30,7 @@ public partial class Staff
 
     public DateTime LastUpdate { get; set; }
 
+   [ForeignKey("AddressId")]
     public virtual Address Address { get; set; } = null!;
 
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
@@ -35,5 +39,6 @@ public partial class Staff
 
     public virtual Store Store { get; set; } = null!;
 
+    [NotMapped]
     public virtual Store? StoreNavigation { get; set; }
 }

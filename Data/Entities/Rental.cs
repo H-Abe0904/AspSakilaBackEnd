@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace AspSakilaBackEnd.Models;
 
+[Table("rental")]
 public partial class Rental
 {
     public int RentalId { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models
 {
@@ -21,6 +22,7 @@ public enum Rating
         BehindTheScenes
     }
 
+[Table("film")]
 public partial class Film
 {
     public ushort FilmId { get; set; }

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace AspSakilaBackEnd.Models;
 
+[Table("film_actor")]
 public partial class FilmActor
 {
     public ushort ActorId { get; set; }

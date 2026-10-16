@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
 
+[Table("nicer_but_slower_film_list")]
 public partial class NicerButSlowerFilmList
 {
     public ushort Fid { get; set; }

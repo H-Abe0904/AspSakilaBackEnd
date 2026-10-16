@@ -1,31 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspSakilaBackEnd.Models;
-
-public partial class Address
+[Table("address")]
+public class Address
 {
-    public ushort AddressId { get; set; }
+    [Column("address_id")]
+    public short AddressId { get; set; }
 
+    [Column("address")] // ★ C#側のプロパティ名 Address1 を MySQLの列名 address にマッピング
     public string Address1 { get; set; } = null!;
 
+    [Column("address2")]
     public string? Address2 { get; set; }
 
+    [Column("district")]
     public string District { get; set; } = null!;
 
-    public ushort CityId { get; set; }
+    [Column("city_id")]
+    public short CityId { get; set; }
 
+    [Column("postal_code")]
     public string? PostalCode { get; set; }
 
+    [Column("phone")]
     public string Phone { get; set; } = null!;
 
+    [Column("last_update")]
     public DateTime LastUpdate { get; set; }
-
-    public virtual City City { get; set; } = null!;
-
-    public virtual ICollection<Customer> Customers { get; set; } = new List<Customer>();
-
-    public virtual ICollection<Staff> Staff { get; set; } = new List<Staff>();
-
-    public virtual ICollection<Store> Stores { get; set; } = new List<Store>();
 }
