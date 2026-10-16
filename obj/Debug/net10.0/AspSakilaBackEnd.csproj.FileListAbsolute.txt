@@ -1,3 +1,11 @@
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.csproj.AssemblyReference.cache
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/rpswa.dswa.cache.json
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.AssemblyInfoInputs.cache
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.AssemblyInfo.cs
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.csproj.CoreCompileInputs.cache
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.MvcApplicationPartsAssemblyInfo.cache
+/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.sourcelink.json
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/appsettings.Development.json
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/appsettings.json
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/dotnet-tools.json
@@ -14,6 +22,8 @@
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.Build.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.Build.Framework.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.Build.Tasks.Core.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.Build.Utilities.Core.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -58,7 +68,6 @@
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Mono.TextTemplating.dll
-/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/MySqlConnector.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Newtonsoft.Json.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/NuGet.Common.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/NuGet.Configuration.dll
@@ -69,7 +78,6 @@
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/NuGet.ProjectModel.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/NuGet.Protocol.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/NuGet.Versioning.dll
-/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Pomelo.EntityFrameworkCore.MySql.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/SQLitePCLRaw.batteries_v2.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/SQLitePCLRaw.core.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/SQLitePCLRaw.provider.e_sqlite3.dll
@@ -81,9 +89,12 @@
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Composition.Runtime.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Composition.TypedParts.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Formats.Nrbf.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Memory.Data.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Resources.Extensions.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Security.Cryptography.Pkcs.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/af/Humanizer.resources.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/ar/Humanizer.resources.dll
@@ -283,14 +294,7 @@
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.csproj.AssemblyReference.cache
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/rpswa.dswa.cache.json
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.GeneratedMSBuildEditorConfig.editorconfig
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.AssemblyInfoInputs.cache
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.AssemblyInfo.cs
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.csproj.CoreCompileInputs.cache
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.MvcApplicationPartsAssemblyInfo.cache
-/home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.sourcelink.json
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
@@ -306,3 +310,5 @@
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.pdb
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/AspSakilaBackEnd.genruntimeconfig.cache
 /home/ubuntu/projects/AspSakilaBackEnd/obj/Debug/net10.0/ref/AspSakilaBackEnd.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/MySqlConnector.dll
+/home/ubuntu/projects/AspSakilaBackEnd/bin/Debug/net10.0/Pomelo.EntityFrameworkCore.MySql.dll
